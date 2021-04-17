@@ -1,7 +1,7 @@
 # Use Python Official Image as Base
 FROM python:3
 
-WORKDIR /app
+WORKDIR /appteste
 
 COPY . .
 
