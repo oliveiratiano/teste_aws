@@ -5,7 +5,7 @@ import stat
 st = os.stat('teste.sh')
 os.chmod('teste.sh', st.st_mode | stat.S_IEXEC)
 cmd = ["./teste.sh"]
-treinar_glove = subprocess.Popen(cmd,  stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+treinar_glove = subprocess.Popen(cmd,  stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True, cwd='glove')
 output, errors = treinar_glove.communicate()
 print(output)
 print(errors)
