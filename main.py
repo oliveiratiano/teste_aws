@@ -5,4 +5,5 @@ treinar_glove = subprocess.Popen(cmd,  stdin=subprocess.PIPE, stdout=subprocess.
 output, errors = treinar_glove.communicate()
 print(output)
 print(errors)
+import pdb; pdb.set_trace()
 treinar_glove.wait()
