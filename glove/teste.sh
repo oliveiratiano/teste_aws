@@ -6,7 +6,8 @@ set -e
 
 make
 
-echo bobo
 
+CORPUS=$1
+VOCAB_FILE=$2
 
-
+echo $CORPUS e VOCAB_FILE
